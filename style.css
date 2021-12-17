@@ -1,0 +1,65 @@
+/*
+Theme Name: April Rose
+Theme URI: 
+Author: Napa Creative Company
+Author URI: https://www.napacreativeco.com
+Description: A WordPress theme for April Rose
+Requires at least: 4.9.6
+Requires PHP: 5.2.4
+Version: 2.1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: aprilrose
+Tags: custom
+*/
+
+/* Reset */
+html,
+body {
+    margin: 0px;
+    overflow-x: hidden;
+}
+
+/* Nav */
+.nav__container {
+    width: 100%;
+    max-width: 100vw;
+}
+.nav__row {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+nav ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: row; }
+nav ul li { margin: 0 10px 0 0; padding: 0; }
+nav ul li:last-of-type { margin: 0 0 0 0; padding: 0; }
+nav .nav__left { display: flex; justify-content: flex-start; }
+nav .nav__center { display: flex; justify-content: center; }
+nav .nav__right { display: flex; justify-content: flex-end; }
+
+/* Hero */
+.hero { 
+    width: 100%;
+    max-width: 100vw;
+    height: 100vh;
+    max-height: 100vh;
+    background: grey;
+    display: flex;
+    align-items: stretch;
+    color: #fff;
+}
+
+.hero .hero__row {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 10%;
+    padding-left: 10%;
+}
+.hero a.button {
+    display: inline-block;
+    margin-top: 20px;
+    background: transparent;
+    border: 2px solid #ffffff;
+    padding: 14px 54px;
+}
