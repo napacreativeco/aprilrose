@@ -19,6 +19,24 @@ body {
     margin: 0px;
     overflow-x: hidden;
 }
+a { color: inherit; }
+
+:root {
+    --btn-border-white: 2px solid #fff;
+    --btn-border-black: 2px solid #000;
+}
+
+/* Typography */
+p { font-size: 16px }
+p.small { font-size: 0.7rem; }
+
+/* Components */
+a.button {
+    display: inline-block;
+    margin-top: 20px;
+    background: transparent;
+    padding: 14px 54px;
+}
 
 /* Nav */
 .nav__container {
@@ -47,7 +65,6 @@ nav .nav__right { display: flex; justify-content: flex-end; }
     align-items: stretch;
     color: #fff;
 }
-
 .hero .hero__row {
     width: 100%;
     display: flex;
@@ -57,9 +74,79 @@ nav .nav__right { display: flex; justify-content: flex-end; }
     padding-left: 10%;
 }
 .hero a.button {
+    border: var(--btn-border-white);
+}
+
+/* Home: Eco Luxe */
+.home__ecoluxe {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 20px;
+}
+
+/* Home: Line Items */
+.home__lineitems { width: 100%; padding: 80px 20px; }
+.home__lineitems .row {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+}
+.home__lineitems a.button {
     display: inline-block;
-    margin-top: 20px;
-    background: transparent;
-    border: 2px solid #ffffff;
-    padding: 14px 54px;
+    border: var(--btn-border-black);
+}
+
+/* Home: Facial Collection */
+.home__facial-collection {
+    width: 100%;
+    padding: 80px 20px;
+}
+.home__facial-collection .row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px;
+}
+
+/* Component: Dual Square Links */
+.comp__dual-square-links { width: 100%; }
+.comp__dual-square-links .row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+}
+.comp__dual-square-links .square {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 600px;
+}
+
+/* Component: Newsletter */
+.comp__newsletter {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    background: #000;
+    color: #fff;
+}
+
+/* Footer */
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+footer .cell.left {
+    display: flex;
+    flex-direction: column;
+}
+footer .cell.right {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }

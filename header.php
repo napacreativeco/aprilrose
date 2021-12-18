@@ -22,7 +22,7 @@
 
 <!-- HEADER -->
 
-<nav class="nav__container" style="padding-top: 20px;">
+<nav class="nav__container">
     <div class="nav__row">
 
         <div class="left">

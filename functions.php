@@ -16,10 +16,10 @@ function aprilrose_setup() {
 
         // NAVIGATION
         register_nav_menus( array(
-            'primary_left'   => __( 'Primary Menu - Left', 'ncc' ),
-            'primary_right'   => __( 'Primary Menu - Right', 'ncc' ),
-            'secondary' => __( 'Secondary Menu', 'ncc' ),
-            'mobile'    => __( 'Mobile Menu', 'ncc')
+            'primary_left'   => __( 'Primary Menu - Left', 'aprilrose' ),
+            'primary_right'  => __( 'Primary Menu - Right', 'aprilrose' ),
+            'footer_left'    => __( 'Footer Menu - Left', 'aprilrose'),
+            'footer_right'    => __( 'Footer Menu - Right', 'aprilrose'),
         ) );
     
         // FEATURED IMAGE
@@ -29,6 +29,17 @@ function aprilrose_setup() {
 endif;
 
 add_action( 'after_setup_theme', 'aprilrose_setup' );
+
+
+function mytheme_customize_register( $wp_customize ) {
+
+    /* Hero */
+    include get_template_directory() . '/customizer/hero-customizer.php';
+
+    /* Dual Square Links */
+    include get_template_directory() . '/customizer/dual-square-customizer.php';
+}
+add_action( 'customize_register', 'mytheme_customize_register' );
 
 
 
