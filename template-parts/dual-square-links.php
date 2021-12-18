@@ -16,10 +16,10 @@
     <div class="row">
 
         <div class="square left">
-            <p class="sub-header">
+            <p class="sub-headline">
                 <?php echo get_theme_mod('dual-left_sub-header', 'Limited'); ?>
             </p>
-            <h2 class="header">
+            <h2 class="headline">
                 <?php echo get_theme_mod('dual-left_header', 'Fall 2021 Line'); ?>
             </h2>
             <p class="desc">
@@ -31,10 +31,10 @@
         </div>
 
         <div class="square right">
-            <p class="sub-header">
+            <p class="sub-headline">
                 <?php echo get_theme_mod('dual-right_sub-header', 'Limited'); ?>
             </p>
-            <h2 class="header">
+            <h2 class="headline">
                 <?php echo get_theme_mod('dual-right_header', 'Fall 2021 Line'); ?>
             </h2>
             <p class="desc">

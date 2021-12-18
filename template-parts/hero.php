@@ -9,7 +9,7 @@
     <div class="hero__row">
         <div class="hero__cta">
             <p><?php echo get_theme_mod('hero_sub-header', 'Unique Collections'); ?></p>
-            <h1><?php echo get_theme_mod('hero_header', 'Bio-Active Collections'); ?></h1>
+            <h1 class="headline"><?php echo get_theme_mod('hero_header', 'Bio-Active Collections'); ?></h1>
             <a href="<?php echo get_theme_mod('hero_link-url', '/shop'); ?>" class="button"><?php echo get_theme_mod('hero_link-text', 'Shop Collections'); ?></a>
         </div>
     </div>
