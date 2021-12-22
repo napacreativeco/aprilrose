@@ -10,7 +10,6 @@ function aprilrose_setup() {
 
         // JS
         wp_enqueue_script('custom', get_stylesheet_directory_uri().'/js/scripts.js', array('jquery'), false, true);
-        wp_enqueue_script('custom', get_stylesheet_directory_uri().'/js/scrollreveal.js', array('jquery'), false, true);
 
         // LANGUAGE SUPPORT
         load_theme_textdomain( 'myfirsttheme', get_template_directory() . '/languages' );

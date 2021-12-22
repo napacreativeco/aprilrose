@@ -1,7 +1,7 @@
 <section class="comp__newsletter">
     <div>
-        <h4 class="headline">Subscribe to save 10%</h4>
-        <p>Browse through our latest products to find something that works for you.</p>
+        <h4 class="headline">Sign up for exclusive email offers</h4>
+        <p>Join our occassional Newsletter for exclusive deals and coupons</p>
     </div>
     <div>
         <input type="email" />

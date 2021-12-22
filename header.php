@@ -11,18 +11,26 @@
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 	<?php wp_head(); ?>
+
+    
+    
+
 
 </head>
 
 <body <?php body_class(); ?>>
 
+
 <!-- PAGE CONTAINER -->
 <div id="page" class="site">
 
-<!-- HEADER -->
+<!-- Top Bar -->
+<div class="top-bar">
+    <p>EXCLUSIVE DEALS DUDE!</p>
+</div>
 
+<!-- HEADER -->
 <nav class="nav__container">
     <div class="nav__row">
 
@@ -32,7 +40,7 @@
                     array(
                         'theme_location'  => 'primary_left',
                         'menu_class'      => '',
-                        'container_class' => 'nav__left',
+                        'container_class' => 'nav__left headline load-hidden',
                         'items_wrap'      => '<ul>%3$s</ul>',
                         'fallback_cb'     => false,
                     )
@@ -52,7 +60,7 @@
                     array(
                         'theme_location'  => 'primary_right',
                         'menu_class'      => '',
-                        'container_class' => 'nav__right',
+                        'container_class' => 'nav__right headline load-hidden',
                         'items_wrap'      => '<ul>%3$s</ul>',
                         'fallback_cb'     => false,
                     )
