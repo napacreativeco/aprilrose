@@ -1,0 +1,4 @@
+body.wp-admin p, .wp-admin span .wp-admin a {
+    font-size: 12px;
+    font-family: 'open sans';
+}
